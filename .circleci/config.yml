@@ -23,5 +23,6 @@ jobs:
           paths:
             - ~/.npm
             - ~/.cache
-      - run: npm install -g wait-on http://localhost:1234
-      - run: $(npm bin)/cypress run --record --key <record_key>
+      - run: npm install -g wait-on
+      - run: npm start & wait-on http://localhost:1234
+      - run: $(npm bin)/cypress run
