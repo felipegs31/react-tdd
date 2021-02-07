@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import RestaurantListPage from './RestaurantListPage'
-import { 
+import {
   Col,
-  Row
- } from 'react-materialize';
+  Row,
+} from 'react-materialize';
 
 const App = () => {
 

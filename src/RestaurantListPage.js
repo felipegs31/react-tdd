@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import NewRestaurantForm from './NewRestaurantForm'
 import RestaurantList from './RestaurantList'
-import { 
+import {
   Button,
-  Modal
- } from 'react-materialize';
+  Modal,
+} from 'react-materialize';
 
 const RestaurantListPage = () => {
 
@@ -22,7 +22,7 @@ const RestaurantListPage = () => {
         id="addRestaurantModal"
         header="New Restaurant"
         trigger={
-          <Button 
+          <Button
             data-test="addRestaurantButton"
           >
             Add Restaurant
@@ -31,7 +31,7 @@ const RestaurantListPage = () => {
       >
         <NewRestaurantForm onSave={handleAddRestaurant}/>
       </Modal>
-     
+
       <RestaurantList restaurants={restaurants} />
     </div>
   )

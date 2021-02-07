@@ -15,11 +15,11 @@ const NewRestaurantForm = props => {
 
   return (
     <div>
-      <TextInput 
-        label="Restaurante Name" 
-        data-test="newRestaurantName" 
+      <TextInput
+        label="Restaurante Name"
+        data-test="newRestaurantName"
         value={inputText}
-        onChange={event => handleTextChange(event)} 
+        onChange={event => handleTextChange(event)}
       />
       <Button data-test="saveNewRestaurantButton" onClick={() => handleSave()}>
         Save

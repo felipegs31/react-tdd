@@ -15,7 +15,7 @@ describe('Adding a restaurant', () => {
       .click()
 
     cy.get('[data-test="newRestaurantName"]')
-      .type(restaurantName, {force: true})
+      .type(restaurantName, { force: true })
 
     cy.get('[data-test="saveNewRestaurantButton"]')
       .click()
